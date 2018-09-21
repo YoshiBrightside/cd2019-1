@@ -5,12 +5,12 @@ public class E1{
 
   public static void main(String[] pps){
     Graph graph = new SingleGraph("Ejercicio 1");
-    graph.addAttribute("ui.stylesheet", "graph { fill-color: black; }");
-    graph.addAttribute("ui.stylesheet", "A { fill-color: red; }");
-    graph.addAttribute("ui.stylesheet", "B { fill-color: red; }");
-    graph.addAttribute("ui.stylesheet", "C { fill-color: red; }");
-    graph.addAttribute("ui.stylesheet", "D { fill-color: red; }");
-    graph.addAttribute("ui.stylesheet", "E { fill-color: red; }");
+    graph.addAttribute("ui.stylesheet", "node {size: 30px, 30px; }"
+      + "node#A { fill-color: red; }"
+      + "node#B { fill-color: blue; }"
+      + "node#C { fill-color: magenta; }"
+      + "node#D { fill-color: yellow; }"
+      + "node#E { fill-color: green; }");
     graph.addNode("A" );
     graph.addNode("B" );
     graph.addNode("C" );
